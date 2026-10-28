@@ -2,7 +2,7 @@
 
 <p align="center"><strong>&#31227;&#38500; dsh &#29305;&#24449;&#25554;&#20214;</strong></p>
 
-[![test](https://github.com/basaltfold/dsh-fingerprint-remover/actions/workflows/test.yml/badge.svg)](https://github.com/basaltfold/dsh-fingerprint-remover/actions/workflows/test.yml)
+[![test](https://github.com/LhyCloud/dsh-fingerprint-remover/actions/workflows/test.yml/badge.svg)](https://github.com/LhyCloud/dsh-fingerprint-remover/actions/workflows/test.yml)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 [Contributing](CONTRIBUTING.md)
@@ -73,7 +73,7 @@ dsh plugin add dsh-fingerprint-remover
 From this repository:
 
 ```bash
-dsh plugin add github:basaltfold/dsh-fingerprint-remover
+dsh plugin add github:LhyCloud/dsh-fingerprint-remover
 ```
 
 Or from a checkout:
