@@ -1,0 +1,68 @@
+{
+  "name": "dsh-fingerprint-remover",
+  "version": "1.0.0",
+  "description": "Removes the host client fingerprints that WorkBuddy's gateway rejects with 400 / code 11-128: the reference-rules sentence pair, the harness identity and GUI paragraphs, runtime-context paths, replayed history, tool descriptions, and the outbound User-Agent.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./sanitize": "./lib/sanitize.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "host": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "engines": {
+      "host": ">=0.2.0-rc.1"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.1-rc.3": "compatible"
+      }
+    },
+    "install": {
+      "preferred": "tarball",
+      "tarball": "https://github.com/basaltfold/dsh-fingerprint-remover/archive/refs/heads/main.tar.gz",
+      "zip": "https://github.com/basaltfold/dsh-fingerprint-remover/archive/refs/heads/main.zip",
+      "git": "https://github.com/basaltfold/dsh-fingerprint-remover.git"
+    }
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check lib/index.js && node --check lib/sanitize.js && node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "host",
+    "host-plugin",
+    "host",
+    "workbuddy",
+    "codebuddy",
+    "11-128",
+    "fingerprint",
+    "privacy"
+  ],
+  "author": "basaltfold",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basaltfold/dsh-fingerprint-remover.git"
+  },
+  "homepage": "https://github.com/basaltfold/dsh-fingerprint-remover#readme",
+  "bugs": {
+    "url": "https://github.com/basaltfold/dsh-fingerprint-remover/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,32 @@
+# dsh-fingerprint-remover bundle patch
+#
+# Mounts the fingerprint remover. All work happens inside `apply`, before the
+# first model request: the prompt sanitizer wraps assembly, and the fetch
+# interceptor rewrites the serialized outbound request body and headers.
+#
+# Optional entry config (defaults shown):
+#
+#   config:
+#     enabled: true
+#     providers: []          # [] = all providers; e.g. ['workbuddy', 'buddy']
+#     sanitizePrompt: true
+#     sanitizeToolResults: true
+#     sanitizeUserMessages: true
+#     sanitizeUserAgent: true
+#     stripAttributionHeaders: true
+#     referenceRulesReplacement: 'An @ prefix marks a path the user named explicitly.'
+#     hostRuleReplacement: 'Relative paths are resolved against the workspace root, while absolute paths refer to files or directories on the machine.'
+#     verbose: false
+#
+- insert:
+    - id: dsh-fingerprint-remover
+      name: 'dsh-fingerprint-remover'
+      config:
+        enabled: true
+        providers: []
+        sanitizePrompt: true
+        sanitizeToolResults: true
+        sanitizeUserMessages: true
+        sanitizeUserAgent: true
+        stripAttributionHeaders: true
+        verbose: false
