@@ -16,25 +16,25 @@
     "CHANGELOG.md",
     "LICENSE"
   ],
-  "host": {
-    "bundle": {
-      "patch": "./cordis.patch.yml"
-    },
-    "engines": {
-      "host": ">=0.2.0-rc.1"
-    },
-    "compatibility": {
-      "dshReleases": {
-        "0.2.1-rc.3": "compatible"
-      }
-    },
-    "install": {
-      "preferred": "tarball",
-      "tarball": "https://github.com/LhyCloud/dsh-fingerprint-remover/archive/refs/heads/main.tar.gz",
-      "zip": "https://github.com/LhyCloud/dsh-fingerprint-remover/archive/refs/heads/main.zip",
-      "git": "https://github.com/LhyCloud/dsh-fingerprint-remover.git"
+  "dsh": {
+  "bundle": {
+    "patch": "./cordis.patch.yml"
+  },
+  "engines": {
+    "dsh": ">=0.2.0-rc.1"
+  },
+  "compatibility": {
+    "dshReleases": {
+      "0.2.1-rc.3": "compatible"
     }
   },
+  "install": {
+    "preferred": "tarball",
+    "tarball": "https://github.com/LhyCloud/dsh-fingerprint-remover/archive/refs/heads/main.tar.gz",
+    "zip": "https://github.com/LhyCloud/dsh-fingerprint-remover/archive/refs/heads/main.zip",
+    "git": "https://github.com/LhyCloud/dsh-fingerprint-remover.git"
+  }
+},
   "scripts": {
     "test": "node --test",
     "check": "node --check lib/index.js && node --check lib/sanitize.js && node --test"
