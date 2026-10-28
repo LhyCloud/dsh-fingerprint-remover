@@ -9,7 +9,7 @@
 ## Reporting a vulnerability
 
 Open a private security advisory on GitHub:
-<https://github.com/basaltfold/dsh-fingerprint-remover/security/advisories/new>
+<https://github.com/LhyCloud/dsh-fingerprint-remover/security/advisories/new>
 
 Do not open a public issue for a bypass that exposes credentials or user data.
 Include the dsh version, plugin version, the upstream error body, and a

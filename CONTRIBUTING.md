@@ -5,7 +5,7 @@ Thanks for helping keep the fingerprint list accurate.
 ## Development
 
 ```bash
-git clone https://github.com/basaltfold/dsh-fingerprint-remover.git
+git clone https://github.com/LhyCloud/dsh-fingerprint-remover.git
 cd dsh-fingerprint-remover
 npm test
 ```

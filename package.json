@@ -30,9 +30,9 @@
     },
     "install": {
       "preferred": "tarball",
-      "tarball": "https://github.com/basaltfold/dsh-fingerprint-remover/archive/refs/heads/main.tar.gz",
-      "zip": "https://github.com/basaltfold/dsh-fingerprint-remover/archive/refs/heads/main.zip",
-      "git": "https://github.com/basaltfold/dsh-fingerprint-remover.git"
+      "tarball": "https://github.com/LhyCloud/dsh-fingerprint-remover/archive/refs/heads/main.tar.gz",
+      "zip": "https://github.com/LhyCloud/dsh-fingerprint-remover/archive/refs/heads/main.zip",
+      "git": "https://github.com/LhyCloud/dsh-fingerprint-remover.git"
     }
   },
   "scripts": {
@@ -52,15 +52,15 @@
     "fingerprint",
     "privacy"
   ],
-  "author": "basaltfold",
+  "author": "LhyCloud",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/basaltfold/dsh-fingerprint-remover.git"
+    "url": "git+https://github.com/LhyCloud/dsh-fingerprint-remover.git"
   },
-  "homepage": "https://github.com/basaltfold/dsh-fingerprint-remover#readme",
+  "homepage": "https://github.com/LhyCloud/dsh-fingerprint-remover#readme",
   "bugs": {
-    "url": "https://github.com/basaltfold/dsh-fingerprint-remover/issues"
+    "url": "https://github.com/LhyCloud/dsh-fingerprint-remover/issues"
   },
   "publishConfig": {
     "access": "public"
